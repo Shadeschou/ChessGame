@@ -10,7 +10,11 @@ public class Rook extends Piece {
         super(imageUrl, color);
     }
 
-
+    /***
+     * Makes an array of legal moves
+     * @param s current Square of the piece.
+     * @return a list of possible moves
+     */
     public ArrayList<Square> getPotentialMoves(Square s){
         ArrayList<Square> res = new ArrayList<Square>();
         int indexX = s.getXIndex();
